@@ -1,25 +1,19 @@
 {
   "name": "my-app",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/Srimathi0910/VeonAI#readme",
-  "bugs": {
-    "url": "https://github.com/Srimathi0910/VeonAI/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Srimathi0910/VeonAI.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "@vitejs/plugin-react": "^5.0.3"
+  }
 }
