@@ -4,7 +4,7 @@ import AboutImage from './img/About-image.png';
 function About() {
   return (
     <div className='about'>
-        <div className="vertical-line"></div>;
+        <div className="vertical-line"></div>
         <div>
         <p style={{ color: "#D4F39A",fontSize:"20px" }}>ABOUT VEON</p>
 
