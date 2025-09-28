@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import sparkle1 from './img/sparkle.png'
-import sparkle2 from './img/sparkle2.png'
-import sparkle3 from './img/sparkle3.png'
 
 
 
