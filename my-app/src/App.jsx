@@ -10,14 +10,14 @@ import Getstarted from './Getstarted.jsx';
 import Footer from './Footer.jsx';
 
 function App() {
-  // useEffect(() => {
-  //   const handleContextMenu = (e) => e.preventDefault();
-  //   document.addEventListener("contextmenu", handleContextMenu);
+  useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    document.addEventListener("contextmenu", handleContextMenu);
 
-  //   return () => {
-  //     document.removeEventListener("contextmenu", handleContextMenu);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
 
   return (
     <>
