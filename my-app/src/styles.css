@@ -171,7 +171,7 @@ img {
 
 .AboutImage img {
     /* width: 100%; */
-    max-width: 350px;
+    max-width: 300px;
     height: auto;
     object-fit: contain;
 }
@@ -796,7 +796,7 @@ footer {
         padding: 10px 30px;
         gap: 8px;
         font-size: 14px;
-          margin: 10px 40px;
+          margin: 5px 40px;
     }
 
     .about {
