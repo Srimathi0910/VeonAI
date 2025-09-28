@@ -171,7 +171,7 @@ img {
 
 .AboutImage img {
     /* width: 100%; */
-    max-width: 280px;
+    max-width: 300px;
     height: auto;
     object-fit: contain;
 }
@@ -863,7 +863,7 @@ footer {
     .header-1 {
         font-size: 12px;
         padding: 8px 12px;
-        margin: 40px 40px;
+        margin: 20px 40px;
     }
 
     .logo-section img {
