@@ -1091,3 +1091,8 @@ footer {
         margin: 10px 0;               /* spacing between elements */
     }
 }
+@media (max-width: 768px) {
+    .vertical-line {
+        display: block !important; /* you tried to show it */
+    }
+}
