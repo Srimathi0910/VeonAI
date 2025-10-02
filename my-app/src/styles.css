@@ -1096,3 +1096,17 @@ footer {
         display: block !important; /* you tried to show it */
     }
 }
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;       /* stack items vertically */
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .vertical-line {
+        width: 2px;
+        height: 100px;                /* shorter height */
+        margin: 10px 0;
+    }
+}
