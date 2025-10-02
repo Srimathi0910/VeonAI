@@ -1067,46 +1067,21 @@ footer {
 }
 
 /* Force desktop-like layout on small screens */
-@media (max-width: 768px) {
-    .about {
-        flex-wrap: nowrap !important;   /* override previous wrap rules */
-        gap: 20px;
-        text-align: left;
-    }
-    .vertical-line {
-        display: block !important;      /* always show vertical line */
-    }
-}
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;       /* stack items vertically */
-        align-items: center;          /* center items */
-        gap: 20px;                    /* spacing between items */
-        text-align: center;
-    }
 
-    .vertical-line {
-        width: 2px;
-        height: 100px;                /* shorter on mobile */
-        margin: 10px 0;               /* spacing between elements */
-    }
-}
-@media (max-width: 768px) {
-    .vertical-line {
-        display: block !important; /* you tried to show it */
-    }
-}
 @media (max-width: 768px) {
     .about {
         flex-direction: column;       /* stack items vertically */
         align-items: center;
-        gap: 20px;
-        text-align: center;
     }
 
     .vertical-line {
-        width: 2px;
-        height: 100px;                /* shorter height */
-        margin: 10px 0;
+        width: 80%;                   /* horizontal line length */
+        height: 2px;                  /* horizontal thickness */
+        margin: 20px 0;               /* spacing */
+        background-color: #ffffff;
+    }
+
+    .vertical-line::before {
+        display: none;                /* hide the dot */
     }
 }
