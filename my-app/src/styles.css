@@ -1028,3 +1028,159 @@ footer {
         max-width: 100%;  /* take full width on very small screens */
     }
 }
+/* ----------------- Reset & Global ----------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F120A;
+    overflow-x: hidden;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ----------------- Container ----------------- */
+.container {
+    width: 100%;
+    max-width: 1800px;  /* large desktop max */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ----------------- Header ----------------- */
+.main-header {
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("https://res.cloudinary.com/do4vshn72/image/upload/v1759043850/Landing_Page0_dcev2c.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.header-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1E1E1E;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.mainLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.header-2 h2 {
+    color: #FFFFFF;
+    font-size: clamp(28px, 6vw, 50px);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.header-2 h5 {
+    color: #FFFFFF;
+    font-size: clamp(16px, 3vw, 25px);
+}
+
+/* ----------------- Sections ----------------- */
+section {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 15px;
+}
+
+/* ----------------- Flex/Grid Fix ----------------- */
+.solution-grid,
+.solution-grid2,
+.feature-grid1,
+.feature-grid2,
+.pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.solution-grid > div,
+.solution-grid2 > div,
+.feature-grid1 div,
+.feature-grid2 div,
+.pricing-card {
+    flex: 1 1 300px;  /* flexible width */
+    max-width: 100%;
+    min-width: 280px; /* prevent too small */
+    box-sizing: border-box;
+}
+
+/* ----------------- Buttons ----------------- */
+button {
+    cursor: pointer;
+}
+
+/* ----------------- Media Queries ----------------- */
+@media (max-width: 1200px) {
+    .header-1,
+    .solution-grid > div,
+    .solution-grid2 > div,
+    .feature-grid1 div,
+    .feature-grid2 div,
+    .pricing-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-1 {
+        max-width: 90%;
+        padding: 8px 12px;
+    }
+    .solution-grid,
+    .solution-grid2,
+    .feature-grid1,
+    .feature-grid2,
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body,
+    .container,
+    section {
+        padding: 10px;
+    }
+    .header-1 {
+        width: 100%;
+        gap: 6px;
+        padding: 6px 10px;
+    }
+}
